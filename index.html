@@ -14,7 +14,6 @@
     <title>Gain Power by Powerade</title>
 
     <style>
-
         #ydmere {
             margin-left: 10vw;
             margin-right: 5vw;
@@ -90,8 +89,9 @@
         }
 
         .blae h2 {
-              margin-left: 11vw;
+            margin-left: 11vw;
         }
+
         .carousel {
             position: absolute;
             top: 13%;
@@ -109,6 +109,7 @@
             position: fixed;
             width: 100%;
             z-index: 1;
+            font-family: 'Raleway', sans-serif;
 
         }
 
@@ -153,21 +154,31 @@
             }
         }
 
+
+        .instagram,
+        .facebook {
+            width: 30px;
+            margin: 1, 1, 1, 1;
+
+        }
+
+        .logo {
+            width: 40px;
+        }
+
     </style>
 
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(101, 159, 253, 0.9);">
-        <a class="navbar-brand" href="#">Logo</a>
+        <a class="navbar-brand" href="#"><img class="logo" src=img/logo.jpg></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li>
-                    <a class="nav-link" href="#forside">Forside<span class="sr-only"></span></a>
-                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="#powerade">Yd mere med Powerade</a>
                 </li>
@@ -180,6 +191,8 @@
 
             </ul>
         </div>
+        <a href="https://www.instagram.com/powerade/"><img class="instagram" src="img/instagram_logo.png"></a>
+        <a href="https://www.facebook.com/Powerade/?brand_redir=158663261221190"><img class="facebook" src="img/facebook_logo.png"></a>
     </nav>
 
     <div class="jumbotron">
@@ -195,14 +208,14 @@
 
 
     <section class="row" id="ydmere">
-        <div class="col-sm-12 col-md-6 col-lg-6 pb-3 ml-2">
+        <div class="col-sm-12 col-md-6 col-lg-4 pb-3 ml-2">
             <h2 id="powerade">Yd mere med Powerade</h2>
             <p>
                 For at få det optimale ud af din træning bør du indtage væske før, under og efter din træning. Ved at drikke Powerade inden din træning sikre du at kroppen er godt hydreret og klar til en intens omgang træning. Powerade er designet til optimal levering af væske og brændstof under din træning. Især hvis man træner i mere end 60 minutter eller under varme temperaturer, er en sportsdrik som Powerade bedre end vand, grundet indholdet af elektrolytter og kulhydrater, da de erstatter den væske og energi som kroppen mister under intens træning. Indtagelse af kulhydrater før og under træning kan hjælpe med at bremse hvor hurtigt kroppen løber tør for dens kulhydrater. <br> <br> Powerade hjælper kroppen og dens muskler med at blive klar til en ny træningssession ved hurtigt at tilføre kroppen væske og brændstof. Der er mange fordele ved at drikke Powerade før, under og efter træning og sportsdrikken kan hjælpe både atleter og sportsudøvere til at træne med højere intensitet og opnå deres maksimale potentiale.
             </p>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 ml-2 mr-2 mt-5">
-            <img class="col-sm-12 col-md-6 col-lg-12 ml-2 mr-2" src="img/Poweradegif.gif"></div>
+        <div class="col-sm-12 col-md-6 col-lg-4  mt-5">
+            <img class="col-sm-12 col-md-6 col-lg-12" src="img/Poweradegif.gif"></div>
     </section>
 
 
@@ -291,11 +304,13 @@
     #naeringsindhold {
         padding-top: 10px;
         margin-left: 10vw;
+
     }
 
     #powerade {
         padding-top: 10px;
     }
+
 </style>
 
 
@@ -309,6 +324,7 @@
             navbar_toggle.trigger('click');
         }
     });
+
 </script>
 
 </html>
