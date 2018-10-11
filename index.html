@@ -14,6 +14,7 @@
     <style>
         p {
             font-family: 'Titillium Web', sans-serif;
+            font-size: 0.8em;
 
         }
 
@@ -39,10 +40,12 @@
             background-repeat: no-repeat;
             position: relative;
             overflow: hidden;
-            height: 170vw;
-            width: 70vw;
+            height: 100vw;
+            width: 40vw;
             display: block;
             margin: 0 auto;
+            margin-bottom: 20px;
+
 
         }
 
@@ -60,8 +63,11 @@
         .jumbotron h1 {
             padding-top: 3vh;
         }
-        #konkurrence {
-            background-color: blue;
+        .konk {
+            background-image: url(img/Blue-background-white-lines-texture-background-451.jpg);
+            margin-top: 50px;
+            color: white;
+            padding: 20px 0px 20px 0px;
         }
 
         .carousel {
@@ -75,22 +81,7 @@
 */
         }
 
-        .carousel-inner {
-            /*            max-height: 116vw;*/
-            height: 140vw;
 
-        }
-
-
-
-        /*
-        .carousel-outer {
-            position: relative;
-            top: 0;
-            left: 0;
-            max-height: 300px;
-        }
-*/
 
         .navbar {
             position: fixed;
@@ -122,8 +113,8 @@
                 width: 12vw;
                 display: block;
                 margin: 0 auto;
-
-
+                margin-top: 20px;
+                margin-bottom: 20px;
 
             }
 
@@ -194,7 +185,7 @@
 
 
 
-    <section class="row" id="konkurrence">
+    <section class="row" id="konkurrence" class="konk">
         <div class="col-sm-12 col-md-16 col-lg-6 ml-2 ">
             <h2 id="konkurrence">Konkurrence</h2>
             <p>Dowload appen ”Gain Power”, få styr på din træning og vind powerade hver måned. Appen lader dig notere hver gang du i din træning stiger i vægt og gentagelser og fortæller dig når det mål, der er opsat efter din bestemte kropstype, er nået. For hver gang du når det opsatte mål, for de indtastede kropsdele og øvelser, vinder du en Powerade, der giver dig styrke og energi til at yde det bedste du kan, så du kan sætte nye personlige mål <br> </p>
@@ -274,15 +265,11 @@
     }
 
     #naeringsindhold {
-        padding-top: 60px;
+        padding-top: 10px;
     }
 
     #powerade {
         padding-top: 10px;
-    }
-
-    #konkurrence {
-        padding-top: 30px;
     }
 </style>
 
