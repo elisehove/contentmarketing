@@ -56,15 +56,17 @@
             background-repeat: no-repeat;
             background-size: contain;
             color: #176db1;
-            width: 100%;
-
-            height: 50vw;
+            width: cover;
         }
 
         .jumbotron p {
             width: 50vw;
-
         }
+
+        .jumbotron h1 {
+            padding-top: 3vh;
+        }
+
 
         .carousel {
             position: absolute;
@@ -143,21 +145,27 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#176db1;">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgba(0,0,255,0.9);">
-
-            <a class="navbar-brand" href="#">Logo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#forside">Forside<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#powerade">Yd mere med Powerade</a>
-                    <a class="nav-item nav-link" href="#konkurrence">Konkurrence</a>
-                    <a class="nav-item nav-link" href="#naeringsindhold">Næringsindhold</a>
-                </div>
-            </div>
-        </nav>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li>
+                    <a class="nav-link" href="#forside">Forside<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#powerade">Yd mere med Powerade</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#konkurrence">Konkurrence</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#naeringsindhold">Næringsindhold</a>
+                </li>
+
+            </ul>
+        </div>
     </nav>
 
     <div class="jumbotron">
@@ -174,7 +182,7 @@
 
     <section class="row" id="ydmere">
         <div class="col-sm-12 col-md-6 col-lg-6 pb-3 ml-2">
-            <h2>Yd mere med Powerade</h2>
+            <h2 id="powerade">Yd mere med Powerade</h2>
             <p>
                 For at få det optimale ud af din træning bør du indtage væske før, under og efter din træning. Ved at drikke Powerade inden din træning sikre du at kroppen er godt hydreret og klar til en intens omgang træning. Powerade er designet til optimal levering af væske og brændstof under din træning. Især hvis man træner i mere end 60 minutter eller under varme temperaturer, er en sportsdrik som Powerade bedre end vand, grundet indholdet af elektrolytter og kulhydrater, da de erstatter den væske og energi som kroppen mister under intens træning. Indtagelse af kulhydrater før og under træning kan hjælpe med at bremse hvor hurtigt kroppen løber tør for dens kulhydrater. <br> <br> Powerade hjælper kroppen og dens muskler med at blive klar til en ny træningssession ved hurtigt at tilføre kroppen væske og brændstof. Der er mange fordele ved at drikke Powerade før, under og efter træning og sportsdrikken kan hjælpe både atleter og sportsudøvere til at træne med højere intensitet og opnå deres maksimale potentiale.
             </p>
@@ -226,22 +234,26 @@
                 </div>
 
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
                 <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
 
             </div>
         </div>
     </section>
 
-    <section id="næringsindhold" class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6 pb-3 ml-2 mr-2">
 
-            <h2>Næringsindhold</h2>
+    <section id="næringsindhold" class="row">
+
+
+
+        <div class="col-sm-12 col-md-6 col-lg-6 pb-3 ml-2">
+
+            <h2 id="naeringsindhold">Næringsindhold</h2>
             <p>Powerade indeholder 4 elektrolytter; natrium, kalium, magnesium og calcium, og er designet til at være i balance med din kropsvæsker, samt at give dig hurtig hydrering og energi når du mest mangler det. Powerades næringsindhold gør dig i stand til at holde din præstation, hvor vand ikke er nok når du træner eller udøver sport.</p>
 
             <p>Natriumen og kulhydraterne i Powerade hjælper din krop med at absorberer væske mere effektivt under lanvarig eller udholdenhedstræning. Powerade er specielt designet til at opfylde kroppens brændstof- og natriumbehov, hvilket hjælper dig med at opretholde den bedste fysiske ydeevne under træning og udholdenhedssport.</p>
@@ -262,15 +274,15 @@
     }
 
     #naeringsindhold {
-        padding-top: 60px;
+        padding-top: 80px;
     }
 
     #powerade {
-        padding-top: 60px;
+        padding-top: 80px;
     }
 
     #konkurrence {
-        padding-top: 60px;
+        padding-top: 50px;
     }
 </style>
 
