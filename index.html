@@ -138,16 +138,24 @@
         }
 
         @media all and (max-width: 499px) {
-            .jumbotron { background-image: url(img/Tegnebr%C3%A6t%201-100.jpg);}
+            .jumbotron {
+                background-image: url(img/Tegnebr%C3%A6t%201-100.jpg);
+            }
             .margin {
                 margin-top: 160px;
             }
 
-            .jumbotron p{
+            .jumbotron p {
                 font-size: 1em;
                 width: 50vw;
             }
-}
+
+            .instagram,
+            .facebook,
+            .youtube {
+                bottom: 10px;
+            }
+        }
 
 
         @media (min-width: 768px) {
@@ -176,6 +184,12 @@
                 height: 100vw;
             }
 
+            .instagram,
+            .facebook,
+            .youtube {
+                bottom: 10px;
+            }
+
         }
 
         @media (min-width 992px) {
@@ -189,8 +203,21 @@
         .facebook,
         .youtube {
             width: 30px;
-            margin: 1, 1, 1, 1;
+            position: absolute;
 
+        }
+
+
+        .instagram {
+            right: 30px
+        }
+
+        .facebook {
+            right: 70px
+        }
+
+        .youtube {
+            right: 110px
         }
 
         .logo {
@@ -240,8 +267,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#naeringsindhold">Næringsindhold</a>
                 </li>
-                <a href="https://www.instagram.com/powerade/"><img class="instagram" src="img/instagram_logo.png" style="transform: translatex(45vw);"></a>
-                <a href="https://www.facebook.com/Powerade/?brand_redir=158663261221190"><img class="facebook" src="img/facebook_logo.png" style="transform:translatex(46vw);"></a>
+                <a href="https://www.instagram.com/powerade/"><img class="instagram" src="img/instagram_logo.png"></a>
+                <a href="https://www.facebook.com/Powerade/?brand_redir=158663261221190"><img class="facebook" src="img/facebook_logo.png"></a>
                 <a href="https://www.youtube.com/user/PoweradeUS"><img class="youtube" src="img/youtube.png"></a>
 
             </ul>
